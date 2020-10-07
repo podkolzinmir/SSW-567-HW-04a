@@ -4,14 +4,13 @@ Miriam Podkolzin '''
 
 
 import unittest
-import requests
-import json
 from solution import getGitHubInfo
-import unittest.mock as mock
+from unittest import mock
+from unittest.mock import Mock
 
 
 class TestHw04a(unittest.TestCase):
-        
+    
     def testValidInput2(self):
         with mock.patch('githubapi.GithubAPI', create=True) as MockgetGitHubInfo:
             MockgetGitHubInfo.return_value = [['CPE-695-Final-Project', 16], ['Design6', 1], ['dsd', 30], ['DSD20S', 1]]
