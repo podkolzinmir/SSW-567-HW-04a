@@ -4,6 +4,8 @@ Miriam Podkolzin '''
 
 
 import unittest
+import requests
+import json
 from solution import getGitHubInfo
 import unittest.mock as mock
 
